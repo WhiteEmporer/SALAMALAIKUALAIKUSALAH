@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>VR Scene</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+
+    <!-- whare / house or museum-->
+    <a-cylinder id="floor" position="0 0 0" radius="7.5" color="green" height="0.1"></a-cylinder>
+    <a-box id="wall1" position="0  1.473  4.907" rotation="0  0  0" scale="10  3  0.28 "  src="images/Pikal.png""></a-box>
+    <a-box id="wall2" position="0  1.473  -4.907" rotation="0  0  0" scale="10  3  0.2 "  src="images/Pikal.png""></a-box>
+    <a-box id="Wall3" position="5.049  1.454  -0.008" rotation="0  -90  0" scale="10  3  0.2" src="images/Pikal.png""></a-box>
+    <a-box id="Wall4" position="-5.049  1.454  -0.008" rotation="0  -90  0" scale="10  3  0.2" src="images/Pikal.png""></a-box>
+    <a-cylinder id="triangle_front" segments-radial="3" position="0  3.874 -4.907" rotation="-90  0  0" scale="5.774  0.2  1.8" color="beige"></a-cylinder>
+    <a-cylinder id="triangle_back" segments-radial="3" position="0  3.874 4.907" rotation="-90  0  0" scale="5.774  0.2  1.8" color="beige"></a-cylinder>
+    <a-box id="roof_right" position="2.580  4.328  0" rotation="28.433  90  0" scale="10.931 0.20  6.130" color="red"></a-box>
+    <a-box id="roof_left" position="-2.599  4.3321  -0.017" rotation="28.433  -90  0" scale="10.931 0.20  6.130" color="red"></a-box>
+    <a-box id="wall1Taha_Hinengaro" position="0 1.473 4.907" scale="10 3 0.2" rotation="0 0 0" src=></a-box>
+    
+   
+    <a-plane id="art" src="images/Pikal.png" scale="2 2 0.05" rotation="0 0 0" position="0.162 1.934 4.792"></a-plane>
+ 
+    <a-entity environment="preset: contact; dressingAmount:250;skyColor:red;groundTexture:squares;dressingColor:#ED6A5A; groundColor:red;fog:20"></a-entity>
+      </a-scene>
+</body>
+
+</html>
